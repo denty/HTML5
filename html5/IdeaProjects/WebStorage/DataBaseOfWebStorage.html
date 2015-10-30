@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="DataBaseOfWebStorage.js"></script>
+</head>
+<body>
+<table>
+    <tr>
+        <td>名字:</td>
+        <td><input type="text" id="name"></td>
+    </tr>
+    <tr>
+        <td>Email:</td>
+        <td><input type="text" id="email"></td>
+    </tr>
+    <tr>
+        <td>电话号码:</td>
+        <td><input type="text" id="tel"></td>
+    </tr>
+    <tr>
+        <td>备注:</td>
+        <td><input type="text" id="memo"></td>
+    </tr>
+</table>
+<input type="button" value="添加" onclick="saveData()">
+<hr>
+<p>检索：
+    <input type="text" id="keyWords">
+    <input type="button" value="查找" onclick="loadData('result')">
+</p>
+<p id="result"></p>
+</body>
+</html>
